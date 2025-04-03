@@ -1,13 +1,15 @@
 import { defineCliConfig } from "sanity/cli";
 
-const projectId = process.env.SANITY_STUDIO_PROJECT_ID;
-const dataset = process.env.SANITY_STUDIO_DATASET;
-const host = process.env.HOST_NAME;
+const projectId = "7nzu9cpw";  // Replace with your actual project ID
+const dataset = "production";   // Replace with your actual dataset (e.g., "development")
+const host = "goldenshovel2025.vercel.app";
+
+
 
 export default defineCliConfig({
   api: {
-    projectId: "7nzu9cpw",
-    dataset: "production",
+    projectId: projectId,
+    dataset: dataset,
   },
   studioHost:
     host && host !== "main"
