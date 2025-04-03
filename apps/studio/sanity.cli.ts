@@ -6,8 +6,8 @@ const host = process.env.HOST_NAME;
 
 export default defineCliConfig({
   api: {
-    projectId: projectId,
-    dataset: dataset,
+    projectId: "7nzu9cpw",
+    dataset: "production",
   },
   studioHost:
     host && host !== "main"
